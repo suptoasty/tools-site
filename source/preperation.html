@@ -3,6 +3,10 @@
     <head>
         <title>Equipment</title>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css'/>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'/>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css'/>
+        <link rel='stylesheet' href='lib/theme.css' />
+
 
         <div class="navbar navbar-expand navbar-dark bg-dark">
             <ul class="navbar-nav mr-auto">
@@ -10,13 +14,45 @@
                 <li class="nav-item"><a class="nav-link navbar-text" href="about.html">about</a></li>
                 <li class="nav-item"><a class="nav-link navbar-text" href="courses.html">courses</a></li>
                 <li class="nav-item"><a class="nav-link navbar-text" href="preperation.html">preperation</a></li>
+                <li class="nav-item"><a class="nav-link navbar-text" href="404.html">404</a></li>
             </ul>
         </div>
     </head>
 
-    <body></body>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>What You'll Need</h1>
+                <div class="owl-carousel owl-theme">
+                    <img class="img-responsive" src="assets/scared-batman.jpeg" alt="img 1">
+                    <img class="img-responsive" src="assets/scared-batman.jpeg" alt="img 2">
+                    <img class="img-responsive" src="assets/scared-batman.jpeg" alt="img 3">
+                </div>
+            </div>
+            <div class="row">
+                <p>Some Text</p>
+            </div>
+        </div>
+    </body>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/cjs/popper.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
+    <footer>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    autoplayHoverPause: true,
+                    navigation: true,
+                    items: 1,
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    singleItem: true
+                });
+            });
+        </script>
+    </footer>
 </html>
