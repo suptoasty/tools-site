@@ -21,12 +21,14 @@
 
     <body>
         <div class="container-fluid">
-            <div class="row">
-                <h1>What You'll Need</h1>
-                <div class="owl-carousel owl-theme">
-                    <img class="img-responsive" src="assets/intelprocessor.jpg" alt="img 1">
-                    <img class="img-responsive" src="assets/code.jpg" alt="img 2">
-                    <img class="img-responsive" src="assets/helloworld.png" alt="img 3">
+            <h1>What You'll Need</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="owl-carousel owl-theme">
+                        <img class="img-fluid" style="height: 36rem; object-fit: contain;" src="assets/intelprocessor.jpg" alt="img 1">
+                        <img class="img-fluid" style="height: 36rem; object-fit: contain;" src="assets/code.jpg" alt="img 2">
+                        <img class="img-fluid" style="height: 36rem; object-fit: contain;" src="assets/helloworld.png" alt="img 3">
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -68,7 +70,8 @@
                     items: 1,
                     slideSpeed: 300,
                     paginationSpeed: 400,
-                    singleItem: true
+                    singleItem: true,
+                    // autoHeight: true,
                 });
             });
         </script>
